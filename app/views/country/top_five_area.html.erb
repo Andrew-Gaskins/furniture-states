@@ -1,0 +1,21 @@
+<h1>Top 5 States by Area</h1>
+
+<table class = "table">
+	<tr>
+		<th>State</th>
+		<th>Capital</th>
+		<th>Population</th>
+		<th>Area</th>
+	</tr>
+		<% @toparea.each do |state| 	%>
+		<tr>
+			<td><%= state.name %></td>
+			<td><%= state.capital %></td>
+			<td><%= state.population %></td>
+			<td><%= state.area %></td>
+		</tr>
+	<% end %>
+</table>
+
+<p><%= link_to "All States", root_path %></p>
+<p><%= link_to "Top 5 by Population", population_path %></p>

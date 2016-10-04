@@ -1,0 +1,5 @@
+<div class = "jumbotron">
+<h1><%= @product.name %></h1>
+<h3><%= number_to_currency @product.price %><h3>
+<h3><%= link_to @product.category, category_path(category: @product.category) %></h3>
+</div>
